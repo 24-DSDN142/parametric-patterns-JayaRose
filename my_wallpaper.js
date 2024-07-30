@@ -1,6 +1,4 @@
-//your parameter variables go here!
-let rect_width  = 20;
-let rect_height = 20;
+//Variables
 
 var color1 = "#679624"
 var color2 =  "#275c0d"
@@ -20,16 +18,22 @@ var DarkGreenStartAngle = 0
 var SwampGreenEndAngle = 320
 var SwampGreenStartAngle = 0
 
+//Light Swamp Green
+
 var LightSwampGreenStartingAngle = 45
 var LightSwampGreenEndAngle = 0
+
+//Dark Swamp Green
 
 var DarkSwampGreenStartAngle = 45
 var DarkSwampGreenEndAngle =  0
 
 var size = random(25, 60);
 
+
+
 function setup_wallpaper(pWallpaper) {
-  pWallpaper.output_mode(GRID_WALLPAPER);
+  pWallpaper.output_mode(DEVELOP_GLYPH);
   pWallpaper.resolution(FIT_TO_SCREEN);
   pWallpaper.show_guide(true); //set this to false when you're ready to print
 
@@ -49,6 +53,10 @@ function my_symbol() { // do not rename this function. Treat this similarly to a
     let y = random(50, 150);
     let size = random(25, 60); // Random size between 40 and 80
  
+    if(x > 100 && y > 100) {
+      size = random(40, 80); //change size if x and y are greater than 100
+    }
+
   fill(color1)
   arc(150, 50, size, size, LightGreenStartAngle, LightGreenEndAngle, PIE);
 
