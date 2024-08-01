@@ -1,24 +1,24 @@
 //Variables
 
-var color1 = "#890bb3" //light green
-var color2 = "#7a063e" //dark green
-var color3 = "#a8150d" //swamp green
-var color4 = "#d17008" //light swamp green
-var color5 = "#0a0af7" //dark swamp green
+var color1 = "#679624" //light green
+var color2 = "#275c0d" //dark green
+var color3 = "#4a6b02" //swamp green
+var color4 = "#8ab802" //light swamp green
+var color5 = "#274205" //dark swamp green
 
 // light green
 
-var LightGreenEndAngle = 345
-var LightGreenStartAngle = 0
+var LightGreenEndAngle = 330 // The angle (in degrees) where the arc ends, measured clockwise from the 3 o'clock position.
+var LightGreenStartAngle = 0 // The angle (in degrees) where the arc starts, measured clockwise from the 3 o'clock position.
 
 // dark green
 
-var DarkGreenEndAngle = 345
+var DarkGreenEndAngle = 330
 var DarkGreenStartAngle = 0
 
 //Swamp green
 
-var SwampGreenEndAngle = 345
+var SwampGreenEndAngle = 320
 var SwampGreenStartAngle = 0
 
 //Light Swamp Green
@@ -31,10 +31,11 @@ var LightSwampGreenEndAngle = 0
 var DarkSwampGreenStartAngle = 45
 var DarkSwampGreenEndAngle = 0
 
-var size = 65 //any number between 25 and 65
+var size = 55 //any number between 25 and 65
 
-var whiteline = "#99f09f"
+var whiteline = "#ffffff"
 
+var drawWhiteline = true; // boolean variable to toggle whiteline on and off
 
 function setup_wallpaper(pWallpaper) {
   pWallpaper.output_mode(GRID_WALLPAPER);
@@ -46,16 +47,12 @@ function setup_wallpaper(pWallpaper) {
   pWallpaper.grid_settings.cell_height = 200;
   pWallpaper.grid_settings.row_offset = 50;
 }
-
 function wallpaper_background() {
   background(45, 188, 227); // Blue
 }
 
 function my_symbol() { // do not rename this function. Treat this similarly to a Draw function
-
   strokeWeight(1)
-
-  
 
   let x1 = 150;
   let y1 = 50;
@@ -96,23 +93,25 @@ function my_symbol() { // do not rename this function. Treat this similarly to a
     strokeWeight(2)
   }
 
-  stroke(whiteline)
-  noFill() //highlight
-  arc(x1, y1, size * 0.8, size * 0.8, 50, 180)
+  if (drawWhiteline) {
+    stroke(whiteline)
+    noFill() // highlight
+    arc(x1, y1, size * 0.8, size * 0.8, 50, 180)
 
-  stroke(whiteline)
-  noFill() // highlight
-  arc(x2, y2, size * 0.8, size * 0.8, 50, 180)
+    stroke(whiteline)
+    noFill() // highlight
+    arc(x2, y2, size * 0.8, size * 0.8, 50, 180)
 
-  stroke(whiteline)
-  noFill() //highlight
-  arc(x3, y3, size * 0.8, size * 0.8, 50, 180)
+    stroke(whiteline)
+    noFill() // highlight
+    arc(x3, y3, size * 0.8, size * 0.8, 50, 180)
 
-  stroke(whiteline)
-  noFill() //highlight
-  arc(x4, y4, size * 0.8, size * 0.8, 50, 180)
+    stroke(whiteline)
+    noFill() // highlight
+    arc(x4, y4, size * 0.8, size * 0.8, 50, 180)
 
-  stroke(whiteline)
-  noFill() //highlight
-  arc(x5, y5, size * 0.8, size * 0.8, 50, 180)
+    stroke(whiteline)
+    noFill() // highlight
+    arc(x5, y5, size * 0.8, size * 0.8, 50, 180)
+  }
 }
