@@ -9,25 +9,55 @@ Your final settings.txt will look something like this when you are finished:
 
 Wallpaper 1:
 
-//your parameter variables go here!
-let rect_width  = 20;
-let rect_height = 20;
-let paramter1 = 10;
-let paramter2 = true;
-let paramter3 = 50; 
-let paramter4 = 0; 
-let paramter5 = 60;
+//Variables
+
+var color1 = "#679624" //light green
+var color2 = "#275c0d" //dark green
+var color3 = "#4a6b02" //swamp green
+var color4 = "#8ab802" //light swamp green
+var color5 = "#274205" //dark swamp green
+
+// light green
+
+var LightGreenEndAngle = 30
+var LightGreenStartAngle = 150
+
+// dark green
+
+var DarkGreenEndAngle = 330
+var DarkGreenStartAngle = 0
+
+//Swamp green
+
+var SwampGreenEndAngle = 320
+var SwampGreenStartAngle = 0
+
+//Light Swamp Green
+
+var LightSwampGreenStartingAngle = 45
+var LightSwampGreenEndAngle = 0
+
+//Dark Swamp Green
+
+var DarkSwampGreenStartAngle = 45
+var DarkSwampGreenEndAngle = 0
+
+var size = 25 //any number between 25 and 60
+
+var whiteline = "#ffffff"
+
 
 function setup_wallpaper(pWallpaper) {
-  pWallpaper.output_mode(GRID_WALLPAPER);
-  pWallpaper.resolution(NINE_LANDSCAPE);
-  pWallpaper.show_guide(false); //set this to false when you're ready to print
+  pWallpaper.output_mode(DEVELOP_GLYPH);
+  pWallpaper.resolution(FIT_TO_SCREEN);
+  pWallpaper.show_guide(true); //set this to false when you're ready to print
 
   //Grid settings
-  pWallpaper.grid_settings.cell_width  = 100;
-  pWallpaper.grid_settings.cell_height = 100;
-  pWallpaper.grid_settings.row_offset  = 50;
+  pWallpaper.grid_settings.cell_width = 200;
+  pWallpaper.grid_settings.cell_height = 200;
+  pWallpaper.grid_settings.row_offset = 50;
 }
+
 
 /////////////////////////////////
 
