@@ -9,46 +9,145 @@ Your final settings.txt will look something like this when you are finished:
 
 Wallpaper 1:
 
-//your parameter variables go here!
-let rect_width  = 20;
-let rect_height = 20;
-let paramter1 = 10;
-let paramter2 = true;
-let paramter3 = 50; 
-let paramter4 = 0; 
-let paramter5 = 60;
+//Variables
+
+var color1 = "#679624" //light green
+var color2 = "#275c0d" //dark green
+var color3 = "#4a6b02" //swamp green
+var color4 = "#8ab802" //light swamp green
+var color5 = "#274205" //dark swamp green
+
+// light green
+
+var LightGreenEndAngle = 330
+var LightGreenStartAngle = 150
+
+// dark green
+
+var DarkGreenEndAngle = 330
+var DarkGreenStartAngle = 150
+
+//Swamp green
+
+var SwampGreenEndAngle = 320
+var SwampGreenStartAngle = 150
+
+//Light Swamp Green
+
+var LightSwampGreenStartingAngle = 45
+var LightSwampGreenEndAngle = 0
+
+//Dark Swamp Green
+
+var DarkSwampGreenStartAngle = 45
+var DarkSwampGreenEndAngle = 0
+
+var size = 55 //any number between 25 and 65
+
+var whiteline = "#ffffff"
+
 
 function setup_wallpaper(pWallpaper) {
   pWallpaper.output_mode(GRID_WALLPAPER);
-  pWallpaper.resolution(NINE_LANDSCAPE);
-  pWallpaper.show_guide(false); //set this to false when you're ready to print
+  pWallpaper.resolution(A3);
+  pWallpaper.show_guide(true); //set this to false when you're ready to print
 
   //Grid settings
-  pWallpaper.grid_settings.cell_width  = 100;
-  pWallpaper.grid_settings.cell_height = 100;
-  pWallpaper.grid_settings.row_offset  = 50;
+  pWallpaper.grid_settings.cell_width = 200;
+  pWallpaper.grid_settings.cell_height = 200;
+  pWallpaper.grid_settings.row_offset = 50;
 }
+
 
 /////////////////////////////////
 
 Wallpaper 2:
 
-//your parameter variables go here!
-let rect_width  = 10;
-let rect_height = 10;
-let paramter1 = 20;
-let paramter2 = false;
-let paramter3 = 50; 
-let paramter4 = 80; 
-let paramter5 = 30;
+//Variables
+
+var color1 = "#890bb3" //light green
+var color2 = "#7a063e" //dark green
+var color3 = "#a8150d" //swamp green
+var color4 = "#d17008" //light swamp green
+var color5 = "#0a0af7" //dark swamp green
+
+// light green
+
+var LightGreenEndAngle = 345
+var LightGreenStartAngle = 0
+
+// dark green
+
+var DarkGreenEndAngle = 345
+var DarkGreenStartAngle = 0
+
+//Swamp green
+
+var SwampGreenEndAngle = 345
+var SwampGreenStartAngle = 0
+
+//Light Swamp Green
+
+var LightSwampGreenStartingAngle = 45
+var LightSwampGreenEndAngle = 0
+
+//Dark Swamp Green
+
+var DarkSwampGreenStartAngle = 45
+var DarkSwampGreenEndAngle = 0
+
+var size = 65 //any number between 25 and 65
+
+var whiteline = "#99f09f"
+
 
 function setup_wallpaper(pWallpaper) {
   pWallpaper.output_mode(GRID_WALLPAPER);
   pWallpaper.resolution(NINE_LANDSCAPE);
-  pWallpaper.show_guide(false); //set this to false when you're ready to print
+  pWallpaper.show_guide(true); //set this to false when you're ready to print
 
   //Grid settings
-  pWallpaper.grid_settings.cell_width  = 100;
-  pWallpaper.grid_settings.cell_height = 100;
-  pWallpaper.grid_settings.row_offset  = 0;
+  pWallpaper.grid_settings.cell_width = 200;
+  pWallpaper.grid_settings.cell_height = 200;
+  pWallpaper.grid_settings.row_offset = 50;
 }
+
+/////////////////////////////////
+
+Wallpaper 3:
+
+
+
+/////////////////////////////////
+
+Wallpaper 4:
+
+
+
+/////////////////////////////////
+
+Wallpaper 5:
+
+
+
+/////////////////////////////////
+
+Wallpaper 6:
+
+
+
+/////////////////////////////////
+
+Wallpaper 7:
+
+
+
+/////////////////////////////////
+
+Wallpaper 8:
+
+
+
+/////////////////////////////////
+
+Wallpaper 9:
